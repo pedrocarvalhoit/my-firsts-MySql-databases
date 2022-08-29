@@ -14,3 +14,11 @@ equipment VARCHAR(30),
 muscle_activation_percentage DOUBLE(10,0)
 );
 
+CREATE TABLE tbclient
+( CPF VARCHAR (11) ,
+NAME_CLIENT VARCHAR (100) ,
+CITY VARCHAR (50) ,
+IDADE SMALLINT,
+SEXO VARCHAR (1) );
+
+
