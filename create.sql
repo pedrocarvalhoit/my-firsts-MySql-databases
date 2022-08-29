@@ -22,4 +22,4 @@ IDADE SMALLINT,
 SEXO VARCHAR (1) );
 
 /* Fixing a mistake */
-ALTER TABLE tbexercises RENAME COLUMN muclegroup TO musclegroup;
+ALTER TABLE tbexercises RENAME COLUMN muSclegroup TO muscle_group;
