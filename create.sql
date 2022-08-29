@@ -21,4 +21,5 @@ CITY VARCHAR (50) ,
 IDADE SMALLINT,
 SEXO VARCHAR (1) );
 
-
+/* Fixing a mistake */
+ALTER TABLE tbexercises RENAME COLUMN muclegroup TO musclegroup;
