@@ -2,7 +2,7 @@
 
 CREATE DATABASE strengthTraining;
 
-/*Adding exercises
+/*Adding table
 ID = First two letters of each word in the name */
 USE strengthtraining;
 
