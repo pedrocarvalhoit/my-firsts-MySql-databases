@@ -1,0 +1,1 @@
+ALTER TABLE tabela_de_clientes RENAME clientes;

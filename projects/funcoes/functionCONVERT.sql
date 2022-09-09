@@ -1,0 +1,15 @@
+SELECT current_timestamp() AS RESULTADO;
+
+SELECT CONCAT('O dia de hoje é: ', DATE_FORMAT(current_timestamp(), '%c,%Y')) as DIA_DE_HOJE;
+
+SELECT SUBSTRING(CONVERT(23.3, CHAR),1,4) AS RESULTADO;
+
+SELECT CONVERT(23.3, CHAR) AS RESULTADO;
+
+SELECT CONCAT('O cliente ', TC.NOME, ' faturou ', 
+CAST(SUM(INF.QUANTIDADE * INF.preco) AS char (20))
+ , ' no ano ', CAST(YEAR(NF.DATA_VENDA) AS char (20))) AS SENTENCA FROM notas_fiscais NF
+INNER JOIN itens_notas_fiscais INF ON NF.NUMERO = INF.NUMERO
+INNER JOIN tabela_de_clientes TC ON NF.CPF = TC.CPF
+WHERE YEAR(DATA_VENDA) = 2016
+GROUP BY TC.NOME, YEAR(DATA_VENDA)

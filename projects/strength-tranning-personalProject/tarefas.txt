@@ -1,0 +1,4 @@
+criar mais uma tabela
+adicionar primarys keys
+adicinar chaves estrangeiras
+criar engenharia reversa
